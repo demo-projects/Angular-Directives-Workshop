@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+
+    <title></title>
+
+    <!-- core scripts -->
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+
+    <div class="container">
+
+        <div class="navbar-header">
+            <a href="#/welcome" class="navbar-brand">DIRECTIVES</a>
+        </div>
+        <!-- navbar-header -->
+
+        <ul class="nav navbar-nav">
+            <li><a href="#/overview">01 Overview</a></li>
+            <li><a href="#/compile">02 Compile & Link</a></li>
+            <li><a href="#/scope">03 Scope</a></li>
+            <li><a href="#/controllers">04 Controllers</a></li>
+            <li><a href="#/transclude">05 Transclusion</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+<div class="container" data-ng-view></div>
+
+<!-- resources -->
+<script type="text/javascript" src="resources/directives.transclude.js"></script>
+<script type="text/javascript" src="resources/directives.controllers.js"></script>
+<script type="text/javascript" src="resources/directives.scope.js"></script>
+<script type="text/javascript" src="resources/directives.compileAndLink.js"></script>
+<script type="text/javascript" src="resources/directives.overview.js"></script>
+<script type="text/javascript" src="resources/app.directives.js"></script>
+<script type="text/javascript" src="resources/app.controllers.js"></script>
+
+</body>
+</html>

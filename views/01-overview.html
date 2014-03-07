@@ -1,0 +1,59 @@
+<div class="page-header">
+	<h1>Overview</h1>
+</div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<select class="form-control input-lg" ng-model="main.view" ng-change="clearConsole()">
+			<option value="">Select Demo...</option>
+			<option value="a">Naming & Attachments</option>
+			<option value="b">Priority & Terminal</option>
+			<option value="c">Templates & Replace</option>
+			<option value="d">Compile & Link</option>
+			<option value="e">scope</option>
+			<option value="f">Controller & Require</option>
+		</select>
+	</div>
+
+	<div class="col-lg-9">
+
+		<div ng-switch="main.view" class="well">
+
+			<div ng-switch-when="a">
+				<input id="checkbox" type="checkbox" ng-model="show.attachments"/>
+				<label for="checkbox">Show Attachments</label>
+				<div ng-include="'views/overview/names.html'"></div>
+			</div>
+
+			<div ng-switch-when="b">
+				<div ng-include="'views/overview/priority.html'"></div>
+			</div>
+
+			<div ng-switch-when="c">
+				<div ng-include="'views/overview/templates.html'"></div>
+			</div>
+
+			<div ng-switch-when="d">
+				<div ng-include="'views/overview/compile.html'"></div>
+			</div>
+
+			<div ng-switch-when="e">
+				<div ng-include="'views/overview/scope.html'"></div>
+			</div>
+
+			<div ng-switch-when="f">
+				<div ng-include="'views/overview/controller.html'"></div>
+			</div>
+
+			<div ng-switch-default>
+				<h2>Directives API Overview
+					<span class="small">Choose a demo from the left selector</span>
+				</h2>
+
+			</div>
+
+		</div><!-- switch -->
+
+	</div>
+
+</div>

@@ -1,0 +1,52 @@
+<div class="row">
+
+    <div class="col-lg-6">
+        <div my-directive>
+            <h2>&lt;div <span class="text-primary"><strong>my-directive</strong></span>&gt;</h2>
+        </div>
+
+        <div my_directive>
+            <h2>&lt;div <span class="text-primary"><strong>my_directive</strong></span>&gt;</h2>
+        </div>
+
+        <div my:directive>
+            <h2>&lt;div <span class="text-primary"><strong>my:directive</strong></span>&gt;</h2>
+        </div>
+
+        <div data-my-directive>
+            <h2>&lt;div <span class="text-primary"><strong>data-my-directive</strong></span>&gt;</h2>
+        </div>
+
+        <div x-data-my-directive>
+            <h2>&lt;div <span class="text-primary"><strong>x-my-directive</strong></span>&gt;</h2>
+        </div>
+    </div>
+
+
+    <div class="col-lg-6" ng-if="show.attachments">
+
+        <h2>Attach as attribute - <strong>"A"</strong></h2>
+
+        <span my-directive-attach></span>
+
+        <br>
+
+        <h2>Attach as Element - <strong>"E"</strong></h2>
+        <my-directive-attach></my-directive-attach>
+
+        <br>
+
+        <h2>Attach as Class - <strong>"C"</strong></h2>
+
+        <div class="my-directive-attach"></div>
+
+        <br>
+
+        <h2>Attach as Comment - <strong>"M"</strong></h2>
+
+        <!-- directive: my-directive-attach -->
+        <span></span>
+
+
+    </div>
+</div>

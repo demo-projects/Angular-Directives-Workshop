@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap",
+  "main": [
+    "./dist/js/bootstrap.js",
+    "./dist/css/bootstrap.css",
+    "./dist/fonts/*"
+  ],
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {},
+  "_release": "9a5f6da223",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "9a5f6da2232efa2b9e89f4ed560cd46eb8c4c21e"
+  },
+  "_source": "http://jsbuilder.relay.yashir.co.il:8085/git/bootstrap.git",
+  "_target": "*",
+  "_originalSource": "bootstrap",
+  "_direct": true
+}

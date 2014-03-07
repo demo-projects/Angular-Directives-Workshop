@@ -1,0 +1,92 @@
+<div class="page-header">
+	<h1>Scope</h1>
+</div>
+
+<div class="row">
+
+	<div class="col-lg-6">
+		<h3>Book In Library:</h3>
+		<pre>
+			{{ library.book | json }}
+		</pre>
+
+		<h3>Methods on Library:</h3>
+
+		<div class="well">
+
+			<h4>getBook() &nbsp;
+				<span class="btn btn-default" ng-click="viewResult = library.getBook()">invoke</span>
+				<span class="btn btn-default" ng-click="viewFlag = !viewFlag">toggle</span>
+			</h4>
+
+			<pre ng-show="viewFlag">{{ viewResult | json }}</pre>
+
+			<h4>getTitle() &nbsp;
+				<span class="btn btn-default" ng-click="bookTitle = library.getTitle()">invoke</span>
+			</h4>
+
+			<pre ng-show="viewFlag">{{ bookTitle | json }}</pre>
+
+			<h4>setTitle() &nbsp;
+				<input class="input-lg" type="text" ng-model="newBookTitle"/>
+				<span class="btn btn-default" ng-click="library.setTitle(newBookTitle)">invoke</span>
+			</h4>
+		</div>
+
+	</div>
+
+	<div class="col-lg-6">
+
+		<label class="checkbox-inline">
+			<input type="checkbox" ng-model="demoA"/>
+			read-only
+		</label>
+
+		<label class="checkbox-inline">
+			<input type="checkbox" ng-model="demoB"/>
+			two-way binding
+		</label>
+
+		<label class="checkbox-inline">
+			<input type="checkbox" ng-model="demoC"/>
+			method binding
+		</label>
+
+
+		<div ng-if="demoA">
+
+			<h3>&lt;div <span class="text-primary">nk-book <span
+					class="text-warning">title="{{ library.book.title }}"</span></span> &gt;
+				&nbsp;&nbsp;<span class="btn btn-default" ng-click="nkbook = !nkbook;">toggle</span>
+			</h3>
+
+			<div ng-if="nkbook">
+				<div nk-book title="{{ library.book.title }}"></div>
+			</div>
+		</div>
+
+		<div ng-if="demoB">
+			<h3>&lt;div <span class="text-primary">nk-title <span
+					class="text-warning">title="library.book.title"</span></span> &gt;
+				&nbsp;&nbsp;<span class="btn btn-default" ng-click="nktitle = !nktitle;">toggle</span>
+			</h3>
+
+			<div ng-if="nktitle">
+				<div nk-title title="library.book.title"></div>
+			</div>
+
+		</div>
+
+		<div ng-if="demoC">
+			<h3>&lt;div <span class="text-primary">nk-setter <span
+					class="text-warning">action="library.setTitle(newTitle)"</span></span> &gt;
+				&nbsp;&nbsp;<span class="btn btn-default" ng-click="nksetter = !nksetter;">toggle</span>
+			</h3>
+
+			<div ng-if="nksetter">
+				<div nk-setter action="library.setTitle(newTitle)"></div>
+			</div>
+		</div>
+
+	</div>
+</div>

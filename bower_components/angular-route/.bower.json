@@ -1,0 +1,15 @@
+{
+  "name": "angular-route",
+  "main": "./angular-route.js",
+  "dependencies": {},
+  "_release": "1750f93909",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "1750f9390942b9d5d42cb4caeee30dc602b39774"
+  },
+  "_source": "http://jsbuilder.relay.yashir.co.il:8085/git/angular-route.git",
+  "_target": "*",
+  "_originalSource": "angular-route",
+  "_direct": true
+}

@@ -1,0 +1,93 @@
+<div class="page-header">
+    <h1>Controllers</h1>
+</div>
+
+<table>
+    <!-- NK-CTRL EXAMPLE -->
+    <tr>
+        <td>
+            <h2>
+                &lt;&nbsp;<span class="text-warning">nk-ctrl <span
+                    class="text-success">desc="some description"</span></span>&nbsp;&gt;
+
+            </h2>
+
+            <div ng-if="demoA">
+                <nk-ctrl desc="some description"></nk-ctrl>
+            </div>
+
+            </div>
+        </td>
+        <td>
+
+            <span class="btn btn-default btn-lg" ng-click="demoA = !demoA;">run / hide</span>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <h2>
+                &lt;&nbsp;<span class="text-warning">nk-attr <span
+                    class="text-success">info="some info"</span></span>&nbsp;&gt;
+
+            </h2>
+
+            <div ng-if="nkattr">
+                <nk-attr info="some info"></nk-attr>
+            </div>
+
+        </td>
+
+        <td><span class="btn btn-default btn-lg" ng-click="nkattr = !nkattr;">run / hide</span></td>
+    </tr>
+
+    <!-- NK-COMPONENT TREE EXAMPLE -->
+    <tr>
+        <td>
+            <h2>
+                &lt;&nbsp;<span class="text-primary">nk-component</span> <span class="text-danger">nk-panel</span>&nbsp;&gt;
+                <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&nbsp;
+                <span class="text-success">nk-button</span>&nbsp;&gt;
+                &lt;&nbsp;<span class="text-success">/nk-button</span>&nbsp;&gt;
+                <br/>
+                &lt;&nbsp;<span class="text-primary">/nk-component</span>&nbsp;&gt;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </h2>
+
+            <div ng-if="nkcomp">
+                <nk-component nk-panel>
+                    <nk-button></nk-button>
+                </nk-component>
+            </div>
+
+        </td>
+        <td><span class="btn btn-default btn-lg" ng-click="nkcomp = !nkcomp;">run / hide</span></td>
+    </tr>
+
+
+    <tr>
+        <td>
+            <h2>
+                &lt;&nbsp;<span class="text-warning">nk-model <span
+                    class="text-success">ng-model="value"</span></span>&nbsp;&gt;
+            </h2>
+
+            <div ng-if='nkmodel'>
+                <br/>
+
+                <nk-model class='well' ng-model="value"></nk-model>
+
+                <br/>
+                <br/>
+                <br/>
+                <textarea ng-model="value"></textarea>
+            </div>
+        </td>
+        <td><span class="btn btn-default btn-lg" ng-click="nkmodel = !nkmodel;">run / hide</span></td>
+    </tr>
+
+
+</table>

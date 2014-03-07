@@ -1,0 +1,51 @@
+<div class="page-header">
+	<h1>Compile and Link <span class="small">the directive life cycle</span></h1>
+</div>
+
+<h2>
+	&lt;&nbsp;<span class="text-primary">component</span>
+	&nbsp;<span class="text-success">frame</span>
+	&nbsp;<span class="text-danger">panel</span>
+	&nbsp;&gt;&nbsp;&nbsp;
+	<span class="btn btn-default btn-lg" ng-click="showDemo('one')">run directive</span>
+</h2>
+
+<hr/>
+
+<h2>
+	&lt;&nbsp;<span class="text-primary">parent</span>&nbsp;&gt;
+	<br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;&nbsp;<span class="text-danger">child</span>&nbsp;&gt;
+	<br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&nbsp;<span class="text-success">grant-child</span>&nbsp;&gt;
+	&lt;&nbsp;<span class="text-success">/grant-child</span>&nbsp;&gt;
+	<br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;&nbsp;<span class="text-danger">/child</span>&nbsp;&gt;
+	<br/>
+	&lt;&nbsp;<span class="text-primary">/parent</span>&nbsp;&gt;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class="btn btn-default btn-lg" ng-click="showDemo('two')">run directive</span>
+</h2>
+
+<hr/>
+
+
+<div ng-switch="demo.directive">
+
+	<div ng-switch-when="one">
+		<component frame panel></component>
+	</div>
+
+	<div ng-switch-when="two">
+
+		<parent>
+			<child>
+				<grant-child></grant-child>
+			</child>
+		</parent>
+
+	</div>
+
+
+</div>

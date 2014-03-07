@@ -1,0 +1,15 @@
+{
+  "name": "angular",
+  "main": "./angular.js",
+  "dependencies": {},
+  "_release": "ffab5c44ee",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "ffab5c44ee8fd4f46e13e8ebf96c19e67383bd7b"
+  },
+  "_source": "http://jsbuilder.relay.yashir.co.il:8085/git/angular.git",
+  "_target": "*",
+  "_originalSource": "angular",
+  "_direct": true
+}

@@ -1,0 +1,26 @@
+body {
+    padding-top: 60px;
+}
+
+.my-class {
+    color: red;
+}
+
+.my-other-class {
+    color: blue;
+}
+
+.accordion h3:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    transition: all 0.5s;
+}
+
+.accordion-content {
+    border: 1px dashed lightgray;
+}
+
+.marker {
+    background-color: #ffff00 ;
+}
+

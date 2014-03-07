@@ -1,0 +1,19 @@
+{
+  "name": "directives",
+  "main": "index.js",
+  "version": "0.0.1",
+  "homepage": "#",
+  "authors": [
+    "Nir Kaufman <nirkaufman@gmail.com>"
+  ],
+  "description": "demo project for the Angularjs directive workshop",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ]
+}

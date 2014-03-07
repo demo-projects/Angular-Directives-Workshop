@@ -1,0 +1,14 @@
+<div>
+	<h2>{{ data.title }}</h2>
+
+	<p class="lead">{{ data.desc }}</p>
+	<button class="btn btn-primary" ng-click="data.printScopeId($id)">Print Scope Id</button>
+
+	<div class="btn-group">
+
+		<div same-scope></div>
+		<div child-scope></div>
+		<div isolated-scope></div>
+	</div>
+
+</div>
